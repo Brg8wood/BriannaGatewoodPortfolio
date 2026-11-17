@@ -1,0 +1,52 @@
+body{
+    background-color:rgba(178, 172, 136, 1) ;
+    background-repeat: no-repeat;
+    background-position: center -10px;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color:bisque;
+    padding: 0;
+    margin: 0;
+   font-size: 40px;
+   font-family: sans-serif;
+   font-weight: 150;
+   text-shadow: 3px 3px 3px rgb(8, 8, 8);
+}
+h2{
+font-size: 30vh;
+padding : 0;
+margin: 0;
+line-height: 0.85;
+text-shadow: 3px 3px 4px rgb(241, 235, 234);
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.title-link a{
+    text-decoration: none;
+    color:rgb(155, 84, 71);
+    font-family: sans-serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 5px 0;
+    text-shadow: 3px 3px 4px rgb(250, 249, 249);
+    font-family: Cambria, Times, 'Times New Roman', serif;
+}
+.title{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.title-link{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 55px;
+}
+

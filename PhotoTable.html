@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="stylesheetGallerys.css">
+</head>
+<body>
+      <header>
+    <h1 class="lobster-regular">Photography
+        <br> 
+        <div class="software-logos">
+        <div class="program">
+            <p>Programs used : 
+            <img src="">
+            </p>
+        </div>
+        </div>
+    </h1>
+    </header>
+
+    <div class="gallery">
+
+        <img src="Photos/25.jpg" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+
+    <a href="MainTable.html"> Back to Home</a>
+
+
+    <script>
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const close = document.querySelector(".close");
+
+images.forEach(image => {
+    image.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = image.src;
+        lightboxImg.alt = image.alt;
+    });
+});
+
+close.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+</script>
+</body>
+</html>
